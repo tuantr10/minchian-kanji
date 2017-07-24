@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div style="font-size: 50px; text-align:center; margin-bottom: 10px;">MinChian<br/></div>
+		<div style="font-size: 50px; text-align:center; border-bottom: 1px solid black; margin-bottom: 10px;">漢字練習<br/></div>
+		<div style="text-align:center;">
+			<div style="font-size: 50px;" id="result"></div>
+			<button class="btn btn-primary btn-lg" onclick="showResult()">次</button>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	var showResult = function() {
+		var result = document.getElementById('result');
+
+		// first test
+		// var wordList = [
+		// 	'怖い','恐怖','浮く','浮力','浮気','浮かぶ','浮かべる','普及','舞台','福祉','花粉','平ら','平社員','片言','補習','補足','保証人','沈む','普通','普段','舞う','舞い','服装','服用する','幸福','祝福','副詞','副り〇〇','複数','複雑','沸く','〜を沸かす','沸騰する','粉薬','小麦粉','雰囲気','の周辺に','海辺','平和','平等','花柄','小柄な人','口癖','潔癖','編集する','編む','片付ける','の片方が','弁当','関西弁','弁護士','大久保','保管','保存','保温','保つ','補修','補修人','補足する','〜を補う','墓','墓地','模擬','模試','模様','規模','応募','募集する','名簿','出席簿','暮れる','暮らす','歳暮','方向','方法','やり方','あの方','放す','放れる','放送','包む','包装','包丁','報いる','情報','報告','豊富','豊か',
+		// 	'宝物','宝石','訪ねる','訪れる','訪問','抱く(見える)','抱える','抱く(見えない)','崩す','崩れる','崩壊','飽きる','飽食','褒める','褒美','死亡','亡くなる','亡くす','逃亡','志望','望み','望遠鏡','防災','防ぐ','予防','消防車','易しい','貿易','容易'];
+
+		// second test
+		var wordList = [
+			'貧乏','乏しい','赤ん坊','お坊さん坊ちゃん','坊主','帽子','翻訳','翻る','翻す','お盆','盆地','盆踊り','米','新米','米国','満足','不満','満月','満ちる','満たす','漫画','自慢','慢性','我慢','味わう','味覚','意味','興味','未来','未完成','未定','命令','命じる','寿命','国民','正夢','悪夢','迷信','麻','麻酔','綿棒','綿','木綿'];
+
+		var randomResult = wordList[Math.floor(Math.random() * wordList.length)];
+		result.innerHTML = randomResult;
+	};
+</script>
+</body>
+</html>

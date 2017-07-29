@@ -4,7 +4,8 @@
   "description": "A simple app to learn Japanese",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,6 @@
   "dependencies": {
     "ect": "^0.5.9",
     "express": "^4.15.3"
+    "nodemon": "^1.11.0",
   }
 }

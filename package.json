@@ -1,0 +1,28 @@
+{
+  "name": "minchian-kanji",
+  "version": "0.0.1",
+  "description": "A simple app to learn Japanese",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuantr10/minchian-kanji.git"
+  },
+  "keywords": [
+    "kanji",
+    "Japanese",
+    "self-learning"
+  ],
+  "author": "TRAN Tuan Dung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuantr10/minchian-kanji/issues"
+  },
+  "homepage": "https://github.com/tuantr10/minchian-kanji#readme",
+  "dependencies": {
+    "ect": "^0.5.9",
+    "express": "^4.15.3"
+  }
+}

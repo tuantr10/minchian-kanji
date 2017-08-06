@@ -24,7 +24,10 @@
   "homepage": "https://github.com/tuantr10/minchian-kanji#readme",
   "dependencies": {
     "ect": "^0.5.9",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.10.8",
     "nodemon": "^1.11.0",
+    "underscore": "^1.8.3"
   }
 }

@@ -1,3 +1,3 @@
 module.exports = {
-	'db': 'mongodb://localhost/minchian-kanji'
+	'db': 'mongodb://db/minchian-kanji'
 }

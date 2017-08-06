@@ -1,11 +1,12 @@
 var express = require('express')
-// var mongoose = require('mongoose')
+var mongoose = require('mongoose')
 var config = require('./core/config')
 
 var app = express()
 var ect = require('ect')
 var viewPath = __dirname + '/apps/desktop/views'
 
+var mongodb = config.db
 app.set('view engine', 'ect')
 app.set('views', viewPath);
 
@@ -21,7 +22,7 @@ app.get('/', function (req, res) {
 	res.render('index')
 })
 
-// mongoose.connect(mongodb)
+mongoose.connect(mongodb)
 
 //Launch listening server on port 8081
 app.listen(8081, function () {

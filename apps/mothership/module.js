@@ -16,7 +16,6 @@ exports.init = function(app) {
 	}).render);
 
 	app.get('/mothership/', function (req, res) {
-		console.log('--------------------------')
 		res.render('index')
 	})
 }
